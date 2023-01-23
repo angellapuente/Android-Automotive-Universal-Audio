@@ -17,6 +17,7 @@
 package com.example.android.uamp.automotive
 
 import android.os.Bundle
+import android.webkit.WebView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -43,5 +44,11 @@ class SignInActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .add(R.id.sign_in_container, SignInLandingPageFragment())
             .commit()
+
+
+        val myWebView: WebView = findViewById(R.id.webview)
+        myWebView.settings.javaScriptEnabled = true
+        myWebView.loadUrl("http://www.google.com")
+
     }
 }

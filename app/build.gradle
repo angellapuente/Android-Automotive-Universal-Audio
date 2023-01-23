@@ -23,10 +23,11 @@ android {
     compileSdkVersion rootProject.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.example.android.uamp.next"
-        versionCode 1
+        applicationId "pol.lapuente.de"
+        versionCode 8
         versionName "1.0"
 
+        vectorDrawables.useSupportLibrary = true
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         multiDexEnabled true
